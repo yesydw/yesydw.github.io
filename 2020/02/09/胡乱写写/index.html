@@ -59,7 +59,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">149字</span>
+            <span class="post-count">286字</span>
         </span>
     </span>
 
@@ -95,13 +95,12 @@
 
       
       <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 <h1 id="注册-github"><a href="#注册-github" class="headerlink" title="注册 github"></a>注册 github</h1><p><code>$ npm hexo g -d</code>   </p>
 <p>​    有一说一，我是胡写的，熟悉一下markdown，，，typora 还是蛮好用的，<a href="https://gitee.com/shen-yu/shen-yu/tree/dev/" target="_blank" rel="noopener">本主题作者源码</a>。</p>
 <h1 id="域名dns"><a href="#域名dns" class="headerlink" title="域名dns"></a>域名dns</h1><p>$$<br>\sqrt{xy}+\sqrt[a]{x}<br>$$</p>
 <p>​                                                以及<br>$$<br> \overbrace{a+b+\dots+n}^{m个}<br>$$<br>矩阵<br>$$<br>\left|<br>\begin{array}{lcr}<br>a &amp; b &amp; c \<br>d &amp; e &amp; f<br>\end{array}<br>\right|<br>$$</p>
 <p>$$<br>ax^2 + bx + c = 0<br>$$</p>
-<p>$$<br> {-b \pm \sqrt{b^2-4ac} \over 2a}<br>$$</p>
+<p>$$<br>{-b \pm \sqrt{b^2-4ac} \over 2a}<br>$$</p>
 <h2 id="表格1"><a href="#表格1" class="headerlink" title="表格1"></a>表格1</h2><table>
 <thead>
 <tr>
@@ -126,6 +125,10 @@
 <td></td>
 </tr>
 </tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;x-mathjax-config&quot;&gt;</span><br><span class="line">  MathJax.Hub.Config(&#123;</span><br><span class="line">    extensions: [&quot;tex2jax.js&quot;],</span><br><span class="line">    jax: [&quot;input&#x2F;TeX&quot;, &quot;output&#x2F;HTML-CSS&quot;],</span><br><span class="line">    tex2jax: &#123;</span><br><span class="line">      &lt;!--$表示行内元素，$$表示块状元素 --&gt;</span><br><span class="line">      inlineMath: [ [&#39;$&#39;,&#39;$&#39;], [&quot;\\(&quot;,&quot;\\)&quot;] ],</span><br><span class="line">      displayMath: [ [&#39;$$&#39;,&#39;$$&#39;], [&quot;\\[&quot;,&quot;\\]&quot;] ],</span><br><span class="line">      processEscapes: true</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;HTML-CSS&quot;: &#123; availableFonts: [&quot;TeX&quot;] &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;!--加载MathJax的最新文件， async表示异步加载进来 --&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; async src&#x3D;&quot;https:&#x2F;&#x2F;cdn.mathjax.org&#x2F;mathjax&#x2F;latest&#x2F;MathJax.js&quot;&gt;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
 <h2 id="表格2"><a href="#表格2" class="headerlink" title="表格2"></a>表格2</h2><table>
 <thead>
 <tr>
@@ -240,15 +243,6 @@
   
   
   <nav class="article-nav">
-    
-      <a href="/2020/02/11/think/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            think
-          
-        </div>
-      </a>
     
     
       <a href="/2020/02/09/post-1/" class="article-nav-link">
@@ -498,7 +492,7 @@
 
 <script>
   var ayerConfig = {
-    mathjax: false
+    mathjax: true
   }
 </script>
 
@@ -618,6 +612,25 @@
 </script>
 
 
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 <script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
